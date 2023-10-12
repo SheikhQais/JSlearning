@@ -39,3 +39,11 @@ function button() {
     document.getElementById('para').innerText="Button Clicked";
     document.getElementById('demo').style.backgroundColor = "violet"; 
 }
+
+// function Ccolor() {
+//     document.getElementsById('button').style.backgroundColor= "black";
+// }
+
+// function Dcolor() {
+//     document.getElementsById('button').style.backgroundColor= "grey";
+// }
