@@ -1,14 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:ital,wght@0,400;1,200;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:ital,wght@0,400;1,200;1,400&family=Recursive&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>writings.dev</title>
 </head>
-<body id="demo">
-    <h2>Let's see what happens!</h2>
-    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab corporis natus, consequatur nulla itaque dolorem fugit impedit perspiciatis ut vel provident quis vitae minus fugiat ex soluta placeat commodi sapiente?</p>
-    <button id="button" type="button" onclick="button()" onmouseover="Ccolor()" onmouseout="Dcolor()">Touch me</button>
-    <script src="var.js"></script>
+
+<body>
+    <nav class="header-nav">
+        <span class="logo-container">
+            <a class="logo">writings.dev</a>
+        </span>
+        <ul class="nav-items">
+            <li class="nav-item"><a>categories</a></li>
+            <li class="nav-item"><a>articles</a></li>
+            <li class="nav-item"><a>about</a></li>
+        </ul>
+    </nav>
+    <section class="hero-container">
+        <img src="../Resource/Icons/Logo.png" alt="logo">
+        <h1>Writing for Developers</h1>
+        <p>Curated collection of articles for busy developers</p>
+    </section>
+    <hr>
+    <section class="categories-container">
+        <div class="icons-container">
+            <img src="../Resource/Icons/Vector (1).png" alt="vector">
+            <img src="../Resource/Icons/List Icon.png" alt="logo">
+        </div>
+        <a>JavaScript</a>
+        <a>DevOps</a>
+        <a>Cloud</a>
+        <a>Terraform</a>
+        <a>Architecture</a>
+        <a>Scalablility</a>
+        <a>Explainers</a>
+    </section>
+
+    <section class="articles-container">
+        <div class="article">
+            <img src="Resource/images/snake.png" alt="snake" class="photo">
+            <div class="article-text-content-container">
+                <h3>Build continuous integration pipelines with GitHub Actions</h3>
+                <p>GitHub actions provide a really powerful way to integrate continuous integration and delivery into
+                    your applications.</p>
+                <div class="article-footer">
+                    <span>June 24, 2023</span><span>.</span><span>DevOps</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="Resource/images/crop.png" alt="crop" class="photo">
+            <div class="article-text-content-container">
+                <h3>Python for the Absolute beginners</h3>
+                <p>Python is the most popular programming language out there and it is used for so many different
+                    industries.</p>
+                <div class="article-footer">
+                    <span>June 24, 2023</span><span>.</span><span>DevOps</span>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <img src="./Resource/images/whale.png" alt="whale" class="photo">
+            <div class="article-text-content-container">
+                <h3>Docker from Zero to Hero</h3>
+                <p>Learn what is Docker and how Docker is used in the whole software development process.</p>
+                <div class="article-footer">
+                    <span>June 24, 2023</span><span>.</span><span>DevOps</span>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <img src="Resource/images/island.png" alt="island" class="photo">
+            <div class="article-text-content-container">
+                <h3>Build continuous integration pipelines with GitHub Actions</h3>
+                <p>GitHub actions provide a really powerful way to integrate continuous integration and delivery into
+                    your applications.</p>
+                <div class="article-footer">
+                    <span>June 24, 2023</span><span>.</span><span>DevOps</span>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <img src="Resource/images/gear.png" alt="gear-box" class="photo">
+            <div class="article-text-content-container">
+                <h3>Build continuous integration pipelines with GitHub Actions</h3>
+                <p>GitHub actions provide a really powerful way to integrate continuous integration and delivery into
+                    your applications.</p>
+                <div class="article-footer">
+                    <span>June 24, 2023</span><span>.</span><span>DevOps</span>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <img src="Resource/images/lake.png" alt="lake" class="photo">
+            <div class="article-text-content-container">
+                <h3>Build continuous integration pipelines with GitHub Actions</h3>
+                <p>GitHub actions provide a really powerful way to integrate continuous integration and delivery into
+                    your applications.</p>
+                <div class="article-footer">
+                    <span>June 24, 2023</span><span>.</span><span>DevOps</span>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <img src="Resource/images/robot.png" alt="robot" class="photo">
+            <div class="article-text-content-container">
+                <h3>Build continuous integration pipelines with GitHub Actions</h3>
+                <p>GitHub actions provide a really powerful way to integrate continuous integration and delivery into
+                    your applications.</p>
+                <div class="article-footer">
+                    <span>June 24, 2023</span><span>.</span><span>DevOps</span>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <img src="Resource/images/valley.png" alt="valley" class="photo">
+            <div class="article-text-content-container">
+                <h3>Build continuous integration pipelines with GitHub Actions</h3>
+                <p>GitHub actions provide a really powerful way to integrate continuous integration and delivery into
+                    your applications.</p>
+                <div class="article-footer">
+                    <span>June 24, 2023</span><span>.</span><span>DevOps</span>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <img src="Resource/images/blocked.png" alt="blocks" class="photo">
+            <div class="article-text-content-container">
+                <h3>Build continuous integration pipelines with GitHub Actions</h3>
+                <p>GitHub actions provide a really powerful way to integrate continuous integration and delivery into
+                    your applications.</p>
+                <div class="article-footer">
+                    <span>June 24, 2023</span><span>.</span><span>DevOps</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="pages">
+        <a>Previous</a>
+        <a>1</a>
+        <a id="active">2</a>
+        <a>3</a>
+        <a>4</a>
+        <a>5</a>
+        <a>Next</a>
+    </section>
+    <footer class="footer">
+        <div class="footer-left">
+            <p id="h3">writings.dev</p>
+            <p id="follow" class="highlight-left-footer">by @sheikh</p>
+        </div>
+        <div class="footer-right">
+            <span class="highlight-right-footer">
+            <img src="Resource/Icons/Vector (2).png" alt="twitter" id="twitter">
+            <span id="follow"> Follow @writingsdev</span>
+        </span>
+        </div>
+    </footer>
+    <script src="dom.js"></script>
 </body>
+
 </html>

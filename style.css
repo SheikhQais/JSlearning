@@ -1,0 +1,174 @@
+:root{
+    --fontPrimary: "Poppins";
+    --fontSecondary: "Caveat";
+}
+/* Giving Background colour to complete body */
+body{
+    background-color: #232830;   
+    padding-left: 10%;
+    padding-right: 10%; 
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: var(--fontSecondary);
+    color: #f3ecec;
+}
+
+/* Giving Style to .header-nav Section*/
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.logo{
+    font-size: 24px;
+    font-family: var(--fontPrimary);
+}
+
+.nav-items{
+    display: flex;
+    gap: 24px;
+}
+.nav-item{
+    list-style-type: none;
+    font-size: 24px;
+    font-family: var(--fontPrimary);
+    /* margin-left: 12px; */
+}
+/* Giving style to Header-Logo Section*/
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 44px 0;
+}
+
+ .hero-container > h1{
+    color: #FF7575;
+    font-family: 'Recursive', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.hero-container > p{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+/* Giving Style to Categories Section*/
+
+.categories-container{
+    color: #909090;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Recursive', sans-serif;
+    font-style: italic;
+    padding: 4px 0;
+    height: 40px;
+    align-items: center;
+}
+
+.icons-container{
+    display: flex;
+    gap: 12px;
+}
+/* Giving the style to Articles Section */
+
+.articles-container{
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 24px;
+}
+
+.article{
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    width: 28%;
+    height: 420px;
+    font-family: 'Poppins', sans-serif;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #232830;
+    }
+    
+.photo{
+    width: 100%;
+}
+
+
+.article-footer{
+    display: flex;
+    justify-content: space-between;     
+
+}
+
+hr{
+    border: 2px solid #4D4D4D;
+}
+
+/* Giving style to Pages Section*/
+
+.pages{
+    color: #909090;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    font-style: italic;
+    font-family: 'Recursive', sans-serif;
+}
+
+.pages > a{
+    padding: 12px;
+    box-sizing: border-box;
+}
+#active{
+    border-top: #FF2323 solid;
+    margin-top: 1px;
+    color: #FF2323;
+}
+
+/* Giving style to footers Section*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-left , .footer-right{
+    display: flex;
+    align-items: center;
+
+}
+.highlight-left-footer{
+    background-color:#4699E0;
+    margin-left: 8px;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.highlight-right-footer{
+    background-color:#4699E0;
+    margin-left: 8px;
+    border-radius: 4px;
+    padding: 4px 8px;
+
+}
