@@ -35,15 +35,19 @@ let v = 123e5;    //12300000
 let d = 123e-5;   //0.00123
 console.log(v + d);
 
-function button() {
-    document.getElementById('para').innerText="Button Clicked";
-    document.getElementById('demo').style.backgroundColor = "violet"; 
+let a=0,b='',c=null;
+console.log(typeof a ,typeof b ,typeof c);
+
+function sum( a, b){
+    return a+b;
 }
+console.log(typeof sum);
 
-// function Ccolor() {
-//     document.getElementsById('button').style.backgroundColor= "black";
-// }
+const arr= [1,2,3,4,5];
+const obj = {1:2,2:3,3:4,4:5,5:6};
 
-// function Dcolor() {
-//     document.getElementsById('button').style.backgroundColor= "grey";
-// }
+console.log(typeof arr);
+
+console.log(typeof obj);
+
+console.log(Array.isArray(arr));
