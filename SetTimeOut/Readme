@@ -1,0 +1,59 @@
+Programming Problem:
+
+Problem: Create a JavaScript program that displays a countdown timer from a specified time
+(in seconds) using setTimeout. When the countdown reaches zero, display a message.
+
+
+Theoretical Questions:
+1) What is the difference between setTimeout and setInterval in JavaScript, and when would you use one over the other?
+    SetTimeOut:
+        SetTimeOut runs the code after the given interval of time.
+    SetInterval:
+        SetInterval runs the code on every given interval of the time.
+
+2) How can you cancel a scheduled timeout or interval in JavaScript?
+    Using the following function after a specific interval of the time.
+        clearTimeout(SetTimeout);
+        clearInterval(SetInterval);
+
+3)  What happens when you nest setTimeout or setInterval calls, and what should you be cautious of when working
+    with nested timers?
+    
+    ->  When you nest setTimeout or setInterval calls, it's essential to understand the order and timing of execution. Inner timers will not wait for outer timers to complete.
+    ->  You should be cautious of potential race conditions and unintended overlapping of timer executions. It's advisable to manage nested timers carefully and ensure that the desired order of execution is maintained.
+
+4)  Explain how to pass arguments to a function called by setTimeout or setInterval. Provide an example of
+    passing  arguments to a callback function.
+
+    ->  Giving the code as example:
+
+            setTimeout(function() {
+        let a = 0;
+        let b = 30;
+        document.getElementById("box-1").innerHTML = a;
+    
+        const interval = setInterval(() => {
+        if (b > 0) {
+            document.getElementById("box-2").innerHTML = b;
+        } 
+        else if(b===0){
+            document.getElementById("box-2").innerHTML = b;
+        } 
+        else {
+            let containers = document.getElementsByClassName("container");
+            for (var i = 0; i < containers.length; i++) {
+            containers[i].innerHTML = '<h1>TIME UP!!!</h1>';
+            }
+            clearInterval(interval);
+        }
+        b = b - 1;
+        }, 1000);
+    }, 1000);
+
+
+5)  What are some common use cases for setTimeout and setInterval in web development, and how can they be
+    used to enhance user experience or perform asynchronous tasks in a web application?
+
+        ---->   setTimeout is commonly used to schedule actions like showing notifications, auto-saving user data, or creating animations that start after a delay
+        ---->   setInterval is used for real-time updates, such as refreshing a chat feed, fetching data from a server at regular intervals, or creating dynamic content (e.g., a live sports scoreboard).
+        ---->   Both functions enhance user experience by providing timely feedback and improving the responsiveness of web applications, creating a more interactive and dynamic environment for users.

@@ -14,20 +14,24 @@
 
 setTimeout(function() {
     let a = 0;
-    let b = 60;
+    let b = 30;
     document.getElementById("box-1").innerHTML = a;
   
     const interval = setInterval(() => {
       if (b > 0) {
         document.getElementById("box-2").innerHTML = b;
-        b = b - 1;
-      } else if(b=0){
-        
-        document.getElementsByClassName("container").innerHTML = "<h1>TIME UP!!!</h1>";
       } 
-      else {
+      else if(b===0){
+        document.getElementById("box-2").innerHTML = b;
+    } 
+    else {
+        let containers = document.getElementsByClassName("container");
+        for (var i = 0; i < containers.length; i++) {
+        containers[i].innerHTML = '<h1>TIME UP!!!</h1>';
+        }
         clearInterval(interval);
       }
+      b = b - 1;
     }, 1000);
   }, 1000);
   
