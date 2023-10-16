@@ -53,3 +53,14 @@ printPrimesInRange(1, 100);
             axios()
             XMLHttpRequest  etc
  */ 
+
+            // JavaScript is not Asynchronous  AND JavaScript is single threaded language not multi-thread
+            console.log(5);
+            console.log(4);
+setTimeout(function(){
+    console.log(8)    /* Event Loop , Main Stack and Side Stack*/
+},0);
+console.log(6);        console.log(7);
+
+
+
