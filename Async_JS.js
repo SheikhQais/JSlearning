@@ -62,5 +62,40 @@ setTimeout(function(){
 },0);
 console.log(6);        console.log(7);
 
+/* CallBack => function
+    fetch
+    axios
+    promises
+    settimeout
+    setinterval
 
+    then, 
+        catch
+        callbacks
+        async await
+
+callbck: is always a function, ye tb chalta ha jb Async code complete ho jata ha
+    setTimeout(function(){},0) => function(){} This is a callback function
+                fetch
+                axios
+                promises
+                settimeout
+                setinterval
+                    Ye functions Async code ka operation ko complete krne k liye use hota han 
+                    
+                    Operation ki output ko chalanay k liye neechay diye gaye functions use hota han
+                            catch
+                            callbacks
+                            async await
+Promises: 
+    Promises has two states:
+        1) Resolve -> then(function(){
+            console.log('Resolved')
+        });
+        2) Rejected -> catch(function(){
+            console.log('Rejected')
+        });
+
+                            
+*/
 
