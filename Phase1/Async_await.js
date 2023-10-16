@@ -12,3 +12,9 @@
             }
         
             abcd();
+
+            /*
+            Concurency: 
+            Parallelism:
+            Throtlling:
+            */
