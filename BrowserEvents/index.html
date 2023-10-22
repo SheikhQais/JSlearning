@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Events</title>
+    <style>
+        body{
+            background-color: rgb(250, 253, 253);
+        }
+        
+        #circle{
+            margin-left: 20px;
+            height: 250px;
+            width: 250px;
+            border: solid 2px #000;
+            border-radius: 50%;
+        }
+        .bulb{
+            margin-left: 20px;
+            height: 250px;
+            width: 250px;
+            border: solid 2px #000;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button type="button"   onclick="alert('Give me Chowmein')">Chowmein</button>
+    <button type="button"   onclick="alert('Give me Masala Rice')">Masala Rice</button>
+    <button type="button"   onclick="alert('Give me Manchurein')">Manchurein</button>
+
+    <h1>Bookmarks</h1>
+    <a  href="https://twitter.com"><button  id="twitter" type="button">Twitter</button></a>
+    <a  href="https://fb.com"><button type="button">Facebook</button></a>
+    <a  href="https://instagram.com"><button type="button">Instagram</button></a>
+    <a  href="https://snapchat.com"><button type="button">SnapChat</button></a>
+
+    <h1>Weather forecast</h1>
+    <button type="button"   id="weather">Weather</button>
+    <h1>light On/Off</h1>
+    <span class="input">
+        <div id="circle" class="bulb"></div>
+        <button type="button"   id="bulb">On</button>
+    </span>
+    <script src="event.js"></script>
+</body>
+</html>

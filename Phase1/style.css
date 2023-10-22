@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(250, 253, 253);
+}
+
+div{
+    margin-left: 20px;
+    height: 250px;
+    width: 250px;
+    border: solid 2px #000;
+    border-radius: 50%;
+}
+
+button{
+    padding: 30px 30px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
