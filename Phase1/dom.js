@@ -13,9 +13,13 @@ a.addEventListener("click",function(){
     }
 })
 
-let promise = fetch("https://goweather.herokuapp.com/weather/Ny")
-promise.then((value)=>{
-    return value.json();
-}).then((value2)=>{
-    console.log(value2)
-});
+// let promise = fetch("https://goweather.herokuapp.com/weather/Ny")
+// promise.then((value)=>{
+//     return value.json();
+// }).then((value2)=>{
+//     console.log(value2)
+// });
+
+document.querySelector('body').addEventListener('mousemove',function(x){
+    console.log(x.clientX +" "+x.clientY);
+})
